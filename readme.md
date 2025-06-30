@@ -28,7 +28,7 @@ A full-stack web application to track your income and expenses, visualize your f
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/expense-tracker.git
+   git clone https://github.com/AbhisekDas01/Expense-Tracker-App-MERN.git
    cd expense-tracker
    ```
 
@@ -54,21 +54,109 @@ A full-stack web application to track your income and expenses, visualize your f
 
 ## Folder Structure
 
+### -> Backend
 ```
-backend/
-  controllers/
-  middleware/
-  models/
-  routes/
-  config/
-  uploads/
-frontend/Expense-Tracker/
-  src/
-    components/
-    pages/
-    context/
-    hooks/
-    utils/
+├── config
+│   ├── db.js
+│   └── env.js
+├── controllers
+│   ├── auth.controller.js
+│   ├── dashboard.controller.js
+│   ├── expense.controller.js
+│   └── income.controller.js
+├── middleware
+│   ├── auth.middleware.js
+│   └── upload.middleware.js
+├── models
+│   ├── expense.model.js
+│   ├── income.model.js
+│   └── user.model.js
+├── package-lock.json
+├── package.json
+├── routes
+│   ├── auth.route.js
+│   ├── dashboard.route.js
+│   ├── expense.route.js
+│   └── income.route.js
+├── server.js
+└── uploads
+```
+
+### -> Frontend
+```
+Expense-Tracker
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+│   └── vite.svg
+├── src
+│   ├── App.jsx
+│   ├── assets
+│   │   ├── images
+│   │   │   └── card2.png
+│   │   ├── logo.svg
+│   │   └── react.svg
+│   ├── components
+│   │   ├── Cards
+│   │   │   ├── CharAvatar.jsx
+│   │   │   ├── InfoCard.jsx
+│   │   │   └── TransactionInfoCard.jsx
+│   │   ├── Charts
+│   │   │   ├── CustomBarChart.jsx
+│   │   │   ├── CustomLegend.jsx
+│   │   │   ├── CustomLineChart.jsx
+│   │   │   ├── CustomPieChart.jsx
+│   │   │   └── CustomToolTip.jsx
+│   │   ├── Dashboard
+│   │   │   ├── ExpenseTransactions.jsx
+│   │   │   ├── FinanceOverview.jsx
+│   │   │   ├── Last30DaysExpenses.jsx
+│   │   │   ├── RecentIncome.jsx
+│   │   │   ├── RecentIncomeWithChart.jsx
+│   │   │   └── RecentTransactions.jsx
+│   │   ├── DeleteAlert.jsx
+│   │   ├── EmojiPickerPopup.jsx
+│   │   ├── Expense
+│   │   │   ├── AddExpenseForm.jsx
+│   │   │   ├── ExpenseList.jsx
+│   │   │   └── ExpenseOverview.jsx
+│   │   ├── Income
+│   │   │   ├── AddIncomeForm.jsx
+│   │   │   ├── IncomeList.jsx
+│   │   │   └── IncomeOverview.jsx
+│   │   ├── Inputs
+│   │   │   ├── Input.jsx
+│   │   │   └── ProfilePhotoSelector.jsx
+│   │   ├── Modal.jsx
+│   │   └── layouts
+│   │       ├── AuthLayout.jsx
+│   │       ├── DashboardLayout.jsx
+│   │       ├── Navbar.jsx
+│   │       └── SideMenu.jsx
+│   ├── context
+│   │   └── userContext.jsx
+│   ├── hooks
+│   │   └── useUserAuth.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   ├── pages
+│   │   ├── Auth
+│   │   │   ├── Login.jsx
+│   │   │   └── SignUp.jsx
+│   │   └── Dashboard
+│   │       ├── Expense.jsx
+│   │       ├── Home.jsx
+│   │       └── Income.jsx
+│   └── utils
+│       ├── apiPaths.js
+│       ├── axiosInstance.js
+│       ├── data.js
+│       ├── helper.js
+│       └── uploadImage.js
+└── vite.config.js
 ```
 
 ## Environment Variables
@@ -91,6 +179,3 @@ PORT=5000
 - `POST /api/v1/expense` - Add expense
 - ...and more (see routes for details)
 
-## License
-
-MIT
