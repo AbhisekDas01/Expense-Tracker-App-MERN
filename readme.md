@@ -18,7 +18,6 @@ A full-stack web application to track your income and expenses, visualize your f
 - **Backend:** Node.js, Express, Mongoose, Multer, JWT
 - **Database:** MongoDB Atlas
 
-## Getting Started
 
 ### Prerequisites
 - Node.js (v16+ recommended)
