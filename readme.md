@@ -1,3 +1,8 @@
+
+![Dashboard image](./frontend/Expense-Tracker/public/dashboard.png "Dashboard image")
+
+
+
 # Expense Tracker
 
 A full-stack web application to track your income and expenses, visualize your financial data, and manage your personal budget.
